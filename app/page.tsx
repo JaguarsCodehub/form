@@ -13,8 +13,6 @@ const PRODUCT_OPTIONS = [
   "New Car Loan",
   "Pre owned Car Loan",
   "Car Refinance",
-  "Balance Transfer + Top Up",
-  "Car Loan Top Up",
 ];
 
 type SubmissionState = "idle" | "loading" | "success" | "error";
