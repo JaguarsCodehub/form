@@ -4,6 +4,7 @@ export type CustomerLead = {
   _id?: ObjectId;
   customerName: string;
   phoneNumber: string;
+  product?: string | null;
   createdAt: Date;
 };
 

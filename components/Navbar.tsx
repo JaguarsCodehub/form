@@ -37,62 +37,12 @@ export default function Navbar() {
           </a>
 
           {/* Product Dropdown */}
-          <div
-            className="relative"
-            onMouseEnter={() => setIsProductOpen(true)}
-            onMouseLeave={() => setIsProductOpen(false)}
+          <a
+            href="https://butterflyfintech.com/car_refinance.html"
+            className="text-sm font-medium text-gray-700 transition-colors hover:text-blue-600"
           >
-            <button className="flex items-center gap-1 text-sm font-medium text-gray-700 transition-colors hover:text-blue-600">
-              Product
-              <svg
-                className="h-4 w-4 transition-transform"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-            {isProductOpen && (
-              <div className="absolute left-0 top-full mt-2 w-56 rounded-lg border border-gray-200 bg-white shadow-lg">
-                <a
-                  href="https://butterflyfintech.com/"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
-                >
-                  New Car Loan
-                </a>
-                <a
-                  href="https://butterflyfintech.com/"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
-                >
-                  Pre owned Car Loan
-                </a>
-                <a
-                  href="https://butterflyfintech.com/car_refinance.html"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
-                >
-                  Car Refinance
-                </a>
-                <a
-                  href="https://butterflyfintech.com/"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
-                >
-                  Balance Transfer + Top Up
-                </a>
-                <a
-                  href="https://butterflyfintech.com/"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
-                >
-                  Car Loan Top Up
-                </a>
-              </div>
-            )}
-          </div>
+            Products
+          </a>
 
           <a
             href="https://butterflyfintech.com/emi_calculator.html"
