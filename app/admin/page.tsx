@@ -11,7 +11,6 @@ export default async function AdminPage() {
   const documents = await collection
     .find({})
     .sort({ createdAt: -1 })
-    .limit(200)
     .toArray();
 
   const leads = documents.map((doc) => ({
@@ -28,7 +27,7 @@ export default async function AdminPage() {
         <div>
           <p className="text-sm font-sans font-medium uppercase tracking-[0.3em] text-emerald-600">Dashboard</p>
           <h1 className="mt-2 text-3xl font-sans font-semibold tracking-tight">Customer submissions</h1>
-          <p className="mt-1 text-sm font-sans text-zinc-500">Showing the most recent {leads.length} entries.</p>
+          <p className="mt-1 text-sm font-sans text-zinc-500">Showing all {leads.length} entries.</p>
         </div>
         <LogoutButton />
       </header>
