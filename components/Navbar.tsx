@@ -67,7 +67,7 @@ export default function Navbar() {
         {/* Apply Now Button */}
         <a
           href="https://apply.butterflyfintech.com/"
-          className="relative z-[101] rounded-lg bg-yellow-400 px-5 py-2.5 text-sm font-semibold text-gray-700 transition-colors hover:bg-yellow-500"
+          className="relative z-[101] rounded-lg bg-yellow-200 px-5 py-2.5 text-sm font-semibold text-gray-700 transition-colors hover:bg-yellow-300"
         >
           Apply Now
         </a>
@@ -163,20 +163,6 @@ export default function Navbar() {
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Car Refinance
-                  </a>
-                  <a
-                    href="https://butterflyfintech.com/"
-                    className="block text-sm text-gray-600 hover:text-blue-600 py-1"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Balance Transfer + Top Up
-                  </a>
-                  <a
-                    href="https://butterflyfintech.com/"
-                    className="block text-sm text-gray-600 hover:text-blue-600 py-1"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Car Loan Top Up
                   </a>
                 </div>
               )}
